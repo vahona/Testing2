@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<App/> with some fake fetch data 1`] = `
+<h1
+  data-testid="app-title"
+>
+   Tea time topic 💡
+</h1>
+`;
+
+exports[`<App/> without data 1`] = `
+<h1
+  data-testid="app-title"
+>
+   Tea time topic 💡
+</h1>
+`;

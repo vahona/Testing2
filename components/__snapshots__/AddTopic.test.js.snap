@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AddTopic/> 1`] = `
+<section>
+  <header>
+    <h4
+      data-testid="add-topic-title"
+    >
+      Add a topic
+    </h4>
+  </header>
+  <article>
+    <form
+      class="add-topic"
+    >
+      <input
+        data-testid="topic-title-input"
+        name="topic"
+        placeholder="Type your topic idea here"
+        required=""
+        type="text"
+        value=""
+      />
+      <button
+        data-testid="submit-button"
+        type="submit"
+      >
+        Submit
+      </button>
+    </form>
+  </article>
+</section>
+`;
