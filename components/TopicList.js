@@ -71,7 +71,7 @@ export default function TopicList({
                   <button
                     onClick={() => upvoteTopic(topic.id)}
                     className="upvote"
-                    data-testid="upvote-topic"
+                    data-testid="upvote-button"
                   >
                     <svg
                       class="w-6 h-6"
@@ -88,11 +88,13 @@ export default function TopicList({
                       ></path>
                     </svg>
                   </button>
-                  <span className="upvote-number">{topic.upvotes}</span>
+                  <span className="upvote-number" data-testid="upvotes-count">
+                    {topic.upvotes}
+                  </span>
                   <button
                     onClick={() => downvoteTopic(topic.id)}
                     className="downvote"
-                    data-testid="down-topic"
+                    data-testid="downvote-button"
                   >
                     <svg
                       class="w-6 h-6"
@@ -109,7 +111,12 @@ export default function TopicList({
                       ></path>
                     </svg>
                   </button>
-                  <span className="downvote-number">{topic.downvotes}</span>
+                  <span
+                    className="downvote-number"
+                    data-testid="downvotes-count"
+                  >
+                    {topic.downvotes}
+                  </span>
                 </div>
               ) : (
                 <p>Discussed on {discussedOnDate.toLocaleDateString()}</p>

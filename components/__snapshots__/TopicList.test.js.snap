@@ -42,7 +42,7 @@ exports[`<TopicList/> with a topic undiscussed 1`] = `
       >
         <button
           class="upvote"
-          data-testid="upvote-topic"
+          data-testid="upvote-button"
         >
           <svg
             class="w-6 h-6"
@@ -61,12 +61,13 @@ exports[`<TopicList/> with a topic undiscussed 1`] = `
         </button>
         <span
           class="upvote-number"
+          data-testid="upvotes-count"
         >
           3
         </span>
         <button
           class="downvote"
-          data-testid="down-topic"
+          data-testid="downvote-button"
         >
           <svg
             class="w-6 h-6"
@@ -85,6 +86,7 @@ exports[`<TopicList/> with a topic undiscussed 1`] = `
         </button>
         <span
           class="downvote-number"
+          data-testid="downvotes-count"
         >
           25
         </span>
